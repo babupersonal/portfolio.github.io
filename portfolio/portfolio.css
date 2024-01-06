@@ -1,0 +1,252 @@
+
+/* swiper */
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .strip-pagination .swiper-pagination-bullet{
+    width: 40px;
+    background: ;
+    border-radius: 5px;
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: rgba(15, 35, 0, 1) ;
+}
+/*content*/
+  *{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.1rem;
+    letter-spacing: 2px;
+  }
+.portfolio{
+    width: 100%;
+    height: 100%;
+}
+a:hover{
+    text-decoration: none;
+}
+.row{
+  padding: 0;
+  margin: 0;
+}
+.portfolio .display-box{
+    height: 80%;
+    border:10px rgba(15, 35, 0, 1) solid;
+}
+.portfolio .view{
+    bottom: 20px;   
+}
+.portfolio .view:hover i{
+    transform: translateX(20%);
+    transition: .2s ease-in-out;
+}
+.portfolio .view .more{
+    width: 150px;
+    height: 45px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    padding: 5px 15px;
+}
+.portfolio .view .more i{ 
+    color: #fff;
+}
+.portfolio .view a:hover{ 
+    color: #fff;
+    
+}
+.portfolio .produce{
+    top: 10%;   
+    left: 0;
+} 
+.portfolio .produce .name{
+    border-radius: 0 10px 10px 0;  
+    background:rgba(0,0, 0, .7);
+    padding: .5rem 1rem;
+    color: #fff;
+} 
+.portfolio .homepage{
+  width: 100%;
+  height: 100%;
+  background: url(img/title.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+.portfolio .homepage .hello{
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  border: 4px rgba(255,255,255,.6) solid;
+
+}
+.portfolio .homepage .hello .content{
+  width: 500px;
+  height: 400px;
+  background: rgba(255,255,255,.8);
+  margin: .5rem;
+}
+.portfolio .homepage .hello .content h2{
+  font-family: 'EB Garamond', serif;
+  font-family: 'Noto Serif TC', serif;
+  font-size: 5rem;
+  padding: 2rem;
+}
+.portfolio .homepage .hello .content p{
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  text-align: center;
+}
+.portfolio .godown {
+  width: 80px;
+  height: 80px;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%); 
+}
+.portfolio .godown i{
+  font-size: 2.5rem;
+}
+.portfolio .godown i:hover{
+  transition: .2s ease-in;
+  transform: translateY(10%);
+}
+.portfolio .web{
+  /*background: rgba(193, 255, 243, 1);*/
+  position: relative;
+}
+.portfolio .web::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url("img/9.jpeg") right/cover no-repeat;
+  filter: opacity(.6);
+  z-index: -1;
+}
+.portfolio  .title{
+  height: 50%;
+}
+.portfolio  .title h2{
+  font-size: 2.5rem;
+  padding: .7rem 3rem;
+  margin-left: 0px;
+  background: rgba(193, 255, 243, 1);
+  box-shadow: 3px 3px 3px #000;
+}
+.portfolio  .title p{
+  font-size: 1.5rem;
+  padding: .8rem 2rem;
+  margin-right: -150px;
+  background-color: rgba(15, 35, 0, 1) ;
+  border-radius: 20px;
+  color: rgba(193, 255, 243, 1);
+}
+.portfolio  .music{
+  width: 350px;
+  height: 600px;
+  background: rgba(255,255,255,1);
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 25px;
+}
+.portfolio .music .circle {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  transition: transform 0.5s linear;
+}
+.portfolio .music .bg1{
+  background: url(img/myself-s.JPG);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio .music  .bg2{
+  background: url(img/7.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.portfolio .music .bg3{
+  background: url(img/8.jpg);
+  background-size: cover;
+  background-position: center;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.portfolio  .music .circle .center-point{
+  width: 30px;
+  height: 30px;
+  background: #fff;
+  border-radius: 50%;
+}
+.portfolio  .music .name {
+
+}
+.portfolio  .music audio {
+  border: rgba(15, 35, 0, 1) solid 4px;
+  border-radius: 30px;
+}
+
+.connection{
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  background: rgba(15, 35, 0, 1);
+}
+.connection .gmail {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  background: #000;
+}
+.connection .gmail:hover {
+  background: #fff;
+  color: #000;
+}
+.connection i{
+  color:#fff;
+  font-size: 2rem; 
+}
+.connection i:hover{
+  color: #000;
+}
+footer{
+  width: 100%;
+  height: 500px;
+  background: red;
+}
