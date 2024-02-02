@@ -1,3 +1,5 @@
+//swiper
+
 var threeswiper = new Swiper(".threeswiper", {
   slidesPerView: 3,
   spaceBetween: 30,
@@ -16,6 +18,20 @@ var muswiper = new Swiper(".muswiper", {
     clickable: true,
   },
 });
+
+
+//loading
+
+setTimeout(function () {
+  var loading = document.querySelector('.loader-container');
+  var show = document.querySelector('.portfolio')
+  loading.style.display = 'none';
+  show.style.display = 'block';
+}, 10000); 
+
+
+//content
+
 
 let titlelist = ["KAIXUAN HUANG","「作」品集"];
 let count=0;
@@ -98,13 +114,13 @@ setTimeout(function () {
   box.style.backgroundImage = 'url(img/first.jpg)';
   box.style.borderRadius = '0px';
   box.style.backgroundSize = 'cover';
-}, 1700); 
+}, 11700); 
 setTimeout(function () {
   var hello = document.querySelector('.portfolio .homepage .hello');
   var music = document.querySelector('.music');
   hello.style.display = 'block';
   music.style.display = 'block';
-}, 4000); 
+}, 14000); 
 
 
 //第二部分

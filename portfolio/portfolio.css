@@ -30,6 +30,30 @@
   .swiper-pagination-bullet-active {
     background-color: rgba(15, 35, 0, 1) ;
 }
+
+
+/*loading*/
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 可根据需要调整容器高度 */
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  background-color: #3498db; /* 加载动画的颜色 */
+  border-radius: 50%;
+  animation: pulse 1.5s ease-in-out infinite; /* 脉冲动画，1.5s为动画时长 */
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+
 /*content*/
   *{
     padding: 0;
@@ -41,6 +65,7 @@
 .portfolio{
     width: 100%;
     height: 100%;
+    display: none;
 }
 a:hover{
     text-decoration: none;
@@ -247,7 +272,7 @@ a:hover{
 .connection i:hover{
   color: #000;
 }
-.fadein1, .fadein2,.fadein3,.fadein4{
+.fadein,.fadein1, .fadein2,.fadein3,.fadein4{
   opacity: 0;
 }
 .top-visible-1{
