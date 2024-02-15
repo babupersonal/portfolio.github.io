@@ -1,5 +1,15 @@
+//swiper
+
 var threeswiper = new Swiper(".threeswiper", {
   slidesPerView: 3,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+var oneswiper = new Swiper(".oneswiper", {
+  slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
@@ -16,6 +26,20 @@ var muswiper = new Swiper(".muswiper", {
     clickable: true,
   },
 });
+
+
+//loading
+
+setTimeout(function () {
+  var loading = document.querySelector('.loader-container');
+  var show = document.querySelector('.portfolio')
+  loading.style.display = 'none';
+  show.style.display = 'block';
+}, 10000); 
+
+
+//content
+
 
 let titlelist = ["KAIXUAN HUANG","「作」品集"];
 let count=0;
@@ -98,13 +122,13 @@ setTimeout(function () {
   box.style.backgroundImage = 'url(img/first.jpg)';
   box.style.borderRadius = '0px';
   box.style.backgroundSize = 'cover';
-}, 1700); 
+}, 11700); 
 setTimeout(function () {
   var hello = document.querySelector('.portfolio .homepage .hello');
   var music = document.querySelector('.music');
   hello.style.display = 'block';
   music.style.display = 'block';
-}, 4000); 
+}, 14000); 
 
 
 //第二部分
@@ -129,6 +153,7 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   });
 });
+/*
 document.addEventListener('DOMContentLoaded', function () {
   var helloContainer = document.querySelector('.portfolio .homepage .hello .content');
 
@@ -148,7 +173,18 @@ document.addEventListener('DOMContentLoaded', function () {
       helloContainer.style.transform = 'translateY(' + translateY + 'px) scale(' + scale + ')';
   });
 });
-
+*/
+function updateSwiper() {
+  if (window.innerWidth < 480) {
+    document.querySelector(".threeswiper").classList.add("oneswiper");
+    oneswiper.init(); // 初始化新的 Swiper
+  } else {
+    document.querySelector(".threeswiper").classList.add("threeswiper");
+    threeswiper.init(); // 重新初始化原始的 Swiper
+  }
+}
+window.addEventListener('load', updateSwiper);
+window.addEventListener('resize', updateSwiper);
 
 
 
