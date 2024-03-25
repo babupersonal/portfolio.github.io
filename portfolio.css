@@ -23,7 +23,6 @@
   }
   .strip-pagination .swiper-pagination-bullet{
     width: 40px;
-    background: ;
     border-radius: 5px;
   }
   
@@ -65,17 +64,24 @@
     line-height: 1.1rem;
     letter-spacing: 2px;
   }
-.portfolio{
-    width: 100%;
-    height: 100%;
-    display: none;
-}
+  .bg-withe{
+    background-color: #fff;
+  }
+  .bg-black{
+    background-color: #000;
+  }
+
 a:hover{
     text-decoration: none;
 }
 .row{
   padding: 0;
   margin: 0;
+}
+.portfolio{
+  width: 100%;
+  height: 100%;
+  display: none;
 }
 .portfolio .display-box{
     height: 80%;
@@ -116,12 +122,11 @@ a:hover{
 .portfolio .homepage{
   width: 100%;
   height: 100%;
-  /*background: url(img/first.jpg);*/
   background-size: cover;
-  background-position: center;
+  /* background-position: center; */
   overflow: hidden;
   border-radius: 20px;
-  background: url(img/13.jpeg);
+  background: url(img/28.jpg);
   animation: started 4s ease-in forwards;
   transition:  border-radius 3s ease-in-out, background-size 1.6s ease-in;
 }
@@ -334,6 +339,63 @@ footer .col-md-4 i{
 .col-12 .col-md-6 b{
   line-height: 3rem;
 }
+
+
+.compare {
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: center;
+  width: 40%;
+  height: 100vh;
+  /*border: 2px  rgba(0, 0, 0, 1) solid;*/
+}
+
+.compare .before{
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease; /* 加入過渡效果 */
+}
+.compare .after {
+  position: absolute;
+  top: 0;
+  left:  0;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease; /* 加入過渡效果 */
+}
+
+.compare .slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 2; /* 將滑塊設置在圖片上面 */
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+}
+
+.compare .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 100%;
+  background: #000;
+  cursor: pointer;
+  border-radius: 0;
+  border: none;
+ 
+  position: relative;
+  z-index: 3; /* 將滑塊游標設置在最上層 */
+}
+
+
 
 @keyframes rotate {
   0% {

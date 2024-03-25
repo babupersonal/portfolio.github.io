@@ -35,7 +35,7 @@ setTimeout(function () {
   var show = document.querySelector('.portfolio')
   loading.style.display = 'none';
   show.style.display = 'block';
-}, 10000); 
+}, 5000); 
 
 
 //content
@@ -122,13 +122,13 @@ setTimeout(function () {
   box.style.backgroundImage = 'url(img/first.jpg)';
   box.style.borderRadius = '0px';
   box.style.backgroundSize = 'cover';
-}, 11700); 
+}, 6700); 
 setTimeout(function () {
   var hello = document.querySelector('.portfolio .homepage .hello');
   var music = document.querySelector('.music');
   hello.style.display = 'block';
   music.style.display = 'block';
-}, 14000); 
+}, 9000); 
 
 
 //第二部分
@@ -153,38 +153,16 @@ document.addEventListener('DOMContentLoaded', function () {
       }
   });
 });
-/*
-document.addEventListener('DOMContentLoaded', function () {
-  var helloContainer = document.querySelector('.portfolio .homepage .hello .content');
 
-  window.addEventListener('scroll', function () {
-      var scrollPosition = window.scrollY;
+const range = document.getElementById('range');
+const beforeImg = document.querySelector('.before img');
+const afterImg = document.querySelector('.after img');
+const containerWidth = document.querySelector('.compare').offsetWidth; // 取得比較區容器的寬度
 
-      // 根据滚动位置调整容器大小和位置
-      var scale = Math.max(1 - scrollPosition / 500, 0.8); // 最小缩放到50%，可根据需要调整
-      var width = 500 * scale;
-      var height = 400 * scale;
-
-      helloContainer.style.width = width + 'px';
-      helloContainer.style.height = height + 'px';
-      
-      // 根据滚动方向调整容器位置
-      var translateY = scrollPosition / 2; // 可根据需要调整滚动距离
-      helloContainer.style.transform = 'translateY(' + translateY + 'px) scale(' + scale + ')';
-  });
+range.addEventListener('input', () => {
+  const value = range.value;
+  const newPosition = (value / 100) * (containerWidth - afterImg.offsetWidth); // 根據比較區容器寬度和圖片寬度計算新位置
+  beforeImg.style.clipPath = `inset(0 ${100 - value}% 0 0)`; // 使用 clip-path 逐漸顯示第二張圖片
 });
-*/
-function updateSwiper() {
-  if (window.innerWidth < 480) {
-    document.querySelector(".threeswiper").classList.add("oneswiper");
-    oneswiper.init(); // 初始化新的 Swiper
-  } else {
-    document.querySelector(".threeswiper").classList.add("threeswiper");
-    threeswiper.init(); // 重新初始化原始的 Swiper
-  }
-}
-window.addEventListener('load', updateSwiper);
-window.addEventListener('resize', updateSwiper);
-
 
 
