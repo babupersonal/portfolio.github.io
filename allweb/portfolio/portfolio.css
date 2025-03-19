@@ -124,7 +124,7 @@ a:hover{
   /* background-position: center; */
   overflow: hidden;
   border-radius: 20px;
-  background: url(img/28.jpg);
+  background: url(img/28.webp);
   animation: started 4s ease-in forwards;
   transition:  border-radius 3s ease-in-out, background-size 1.6s ease-in;
 }

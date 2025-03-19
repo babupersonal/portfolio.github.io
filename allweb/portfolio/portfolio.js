@@ -119,7 +119,7 @@ document.addEventListener('DOMContentLoaded', function () {
 //第一部分
 setTimeout(function () {
   var box = document.querySelector('.homepage');
-  box.style.backgroundImage = 'url(img/first.jpg)';
+  box.style.backgroundImage = 'url(img/first.webp)';
   box.style.borderRadius = '0px';
   box.style.backgroundSize = 'cover';
 }, 3700); 
