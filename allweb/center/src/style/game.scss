@@ -1,0 +1,108 @@
+.game{
+    .content{
+        width: 80%;
+        padding: 0% 10% 3% 10%;
+        position: relative;
+        .frame{
+            width: 100%;
+            height: auto;
+            border-radius: 30px;
+            background: #282828;
+            flex-direction: column;
+            .video{
+                width: 90%;
+                height: auto;
+                margin:5%;
+                border-radius: 20px;
+                video{
+                    width: 100%;
+                    border-radius: 20px;
+                }
+            }
+            .img{
+                width: 100%;
+                justify-content: space-around;
+                img{
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                }
+                .white-frame{
+                    border: 8px solid #fff;
+                }
+            }
+            .game-list{
+                width: 90%;
+                margin:5%;
+                height: 100%;
+                // height: 720px;
+                max-height: 720px;
+                flex-direction: column;
+                background: #fff;
+                border-radius: 20px;
+                overflow-y: scroll;
+                &::-webkit-scrollbar {
+                    width: 8px; /* 滾動條寬度 */
+                  }
+                  &::-webkit-scrollbar-thumb {
+                    background-color: rgba(0, 0, 0, 0.5);
+                    border-radius: 4px;
+                  }
+                  &::-webkit-scrollbar-track {
+                    background: transparent;
+                  }
+                .row{
+                    width: 100%;
+                    // padding: 0 2%;
+                    .item{
+                        width: 21%;
+                        padding: 2%;
+                        flex-direction: column;
+                        img{
+                            width: 100%;
+                        }
+                        .name{
+                            width: 100%;
+                            height: 60px;
+                            margin-left: -40px;
+                            margin-top: -20px;
+                            border-radius: 15px;
+                            background: #282828;
+                            color: #fff;
+                            letter-spacing: .3rem;
+                            font-weight: bold;
+                            font-size: 1.3rem;
+                        }
+                    }
+
+                }
+            }
+        }
+        .text {
+            position: absolute;
+            writing-mode: vertical-rl; /* 垂直顯示文字 */
+            // text-orientation: upright;  /* 保持每個字母直立 */
+            font-size: 3.5rem;
+            letter-spacing: 1.1rem;
+            font-weight: bold;
+            color: transparent;
+            -webkit-text-stroke: 1px #000; 
+        }    
+        .text1{
+            left: 3%;
+            top: 0;
+        }   
+        .text2{
+            left: 3%;
+            top: 50%;
+        } 
+        .text3{
+            right: 3%;
+            top: 0;
+        }   
+        .text4{
+            right: 3%;
+            top: 50%;
+        }      
+    }
+}

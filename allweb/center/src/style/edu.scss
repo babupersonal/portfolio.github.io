@@ -1,0 +1,179 @@
+.edu1 {
+    width: 100%;
+
+    .types {
+        width: 80%;
+        padding: 0 10%;
+        
+        .swiper {
+            .swiper-wrapper {
+                .swiper-slide {
+                    padding: 0px;
+                }
+            }
+            .swiper-button-next,
+            .swiper-button-prev {
+                color: #fff;
+                background: #000;
+                border-radius: 50%;
+                width: 30px;
+                height: 30px;
+                position: absolute;
+            }
+
+            .swiper-button-next::after,
+            .swiper-button-prev::after {
+                font-size: 16px;
+            }
+
+            .swiper-button-prev {
+                left: 0px;
+            }
+
+            .swiper-button-next {
+                right: 0px;
+            }
+        }
+
+        .icon {
+            width: 200px;
+            height: 200px;
+            background: #E0D9D7;
+            border-radius: 20px;
+            flex-direction: column;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+    .type-title{
+        width: 100%;
+        height: 80px;
+        border-radius: 20px;
+        background: #282828;
+        color: #fff;
+        font-size: 1.8rem;
+        font-weight: bold;
+        letter-spacing: .5rem;
+        margin: 3% 0;
+    }
+    .content{
+        width: 100%;
+        margin-bottom: 5%;
+        .describe{
+            width: 70%;
+            color: #fff;
+            padding: 2% 5%;
+            background: rgba($color: #000000, $alpha: 0.5);
+            border-radius: 30px;
+            h3{
+                font-size: 1rem;
+                margin-bottom: 5%;
+            }
+            .item{
+                position: relative;
+                width: 100%;
+                height: 100px;
+                span{
+                    position: absolute;
+                    left: -145px;
+                    width: 120px;
+                    height: 40px;
+                    padding: 5px 10px ;
+                    background: #282828;
+                    border-radius: 15px;
+                    font-weight: bold;
+                    letter-spacing: .2rem;
+                    font-size: 1.2rem;
+                }
+                p{
+                    margin-left: 3%;
+                }
+            }
+        }
+    }
+}
+
+
+.edu2{
+    width: 100%;
+    .item1{
+        width: 95%;
+        height: auto;
+        padding:0 0% 3% 5%;
+        .img{
+            width: 30%;
+            height: 100%;
+            img{
+                width: 250px;
+                height: 250px;
+                border-radius: 50%;
+            }
+        }
+        .describe{
+            width: 70%;
+            height: 100%;
+            background: #F1E0BC;
+            text-align: justify;
+            padding: 5% 5% 5% 10%;
+            border-top-left-radius: 200px;
+            border-bottom-left-radius: 200px;
+        }
+    }
+    .item2{
+        width: 100%;
+        flex-direction: column;
+        .content{
+            width: 70%;
+            span{
+                width: 20%;
+                p{
+                    width: 120px;
+                    height: 120px;
+                    background: #BD4D42;
+                    border-radius: 50%;
+                    color: #fff;
+                }
+            }
+            p{
+                width: 80%; 
+            }
+        }
+        .content:nth-child(even){
+            margin-left: -10%;
+        }
+        .content:nth-child(odd){
+            margin-left: 10%;
+        }
+    }
+    .item3{
+        width: 100%;
+        height: auto;
+        padding:0 0% 3% 0%;
+        margin-top: 3%;
+        .img{
+            width: 35%;
+            height: 100%;
+            margin-right: 3%;
+            img{
+                width: 100%;
+            }
+        }
+        .describe{
+            width: 60%;
+            height: 100%;
+            background: #F1E0BC;
+            text-align: justify;
+            margin-right: 2%;
+            padding: 5% 10% 5% 5%;
+            border-top-right-radius: 200px;
+            border-bottom-right-radius: 200px;
+        }
+    }
+}

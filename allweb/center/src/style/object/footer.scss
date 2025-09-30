@@ -1,0 +1,34 @@
+.footer {
+    background-color: #1c1c1c;
+    color: #fff;
+    padding: 2% 10%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #666;
+    padding-bottom: 20px;
+}
+
+.footer-section h3 {
+    color: #fff; 
+    font-size: 1.2rem;
+}
+
+.footer-section ul {
+    // list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-top: 5px;
+    color: rgba($color:#fff, $alpha: .5);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #aaa;
+}
